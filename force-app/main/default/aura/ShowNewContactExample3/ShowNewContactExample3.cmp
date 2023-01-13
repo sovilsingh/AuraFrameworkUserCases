@@ -1,0 +1,12 @@
+<aura:component controller="ContactApexEventExample3" >
+	  <aura:attribute name="contacts" type="List" default="[]"/>
+      <aura:attribute name="acolumns" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.callMe}"/>
+    <aura:handler name="compEvent" event="c:ComponentTypeEventExample3" action="{!c.showMe}"/>
+    <div class="box">
+        <c:NewContactExample3/>
+    </div>
+    <br/>
+    <br/>
+    <lightning:dataTable keyField="id" data="{!v.contacts}" columns="{!v.acolumns}" showRowNumberColumn="true"/>
+</aura:component>

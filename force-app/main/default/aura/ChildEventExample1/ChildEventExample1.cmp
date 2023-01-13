@@ -1,0 +1,11 @@
+<aura:component >
+    <!-- Register The Event-->
+    <aura:registerEvent name="empEvent" type="c:employeeEventExample1"/>
+    <aura:attribute name="myEmpName" type="String"/>
+    <!--source component itself is handling the event -->
+    <aura:handler name="empEvent" event="c:employeeEventExample1" action="{!c.handleEvent}"/>
+    <!--Setting value for the Event attribute -->
+    <lightning:button label="fire the event" onclick="{!c.handleClick}" variant="brand"/>
+    <h1>Child Component itslef can handle</h1>
+    <h1>employee Name is {!v.myEmpName}</h1>
+</aura:component>

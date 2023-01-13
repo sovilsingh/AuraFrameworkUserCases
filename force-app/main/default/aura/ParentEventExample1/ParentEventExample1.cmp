@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="myEmpName" type="String"/>
+    <aura:handler name="empEvent" event="c:employeeEventExample1" action="{!c.handleEvent}"/>
+    <c:ChildEventExample1/>
+    <h1>This is Parent Component</h1>
+    <h1>employee Name is {!v.myEmpName}</h1>
+</aura:component>

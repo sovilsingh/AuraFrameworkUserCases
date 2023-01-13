@@ -1,0 +1,16 @@
+<aura:component controller="ContactApexEventExample3" >
+    <!--<aura:registerEvent name="appEvent" type="c:ComponentTypeEventExample3"/> -->
+    <aura:registerEvent name="compEvent" type="c:ComponentTypeEventExample3"/>
+    <aura:attribute name="newContact" type="Contact" default="{sObjectType:'contact'}"/>
+	<div class="slds-box boxWidth">
+        <lightning:card title="New Contact">
+            <aura:set attribute="actions">
+                <lightning:button label="Save" onclick="{!c.handleSave}" variant="Success"/>
+            </aura:set>
+            <lightning:input label="First Name" value="{!v.newContact.FirstName}"/>
+            <lightning:input label="Last Name" value="{!v.newContact.LastName}"/>
+            <lightning:input label="Email" value="{!v.newContact.Email}"/>
+            <lightning:input label="Phone" value="{!v.newContact.Phone}"/>
+        </lightning:card>
+    </div>
+</aura:component>

@@ -1,0 +1,8 @@
+<aura:component >
+	<P>This is From State 1</P>
+     <aura:handler name="MediumPriorityComplaintFromTownship_1" event="c:ComponentEventWithComplaintMsgExample4"
+                  action="{!c.handlingMediumPComplaints}" Phase="bubble"/>
+    <aura:handler name="HighPriorityComplaintFromTownship_1" event="c:ComponentEventWithComplaintMsgExample4"
+                  action="{!c.handlingHighPComplaints}" Phase="capture"/>
+    <c:DistrictExample4/>
+</aura:component>

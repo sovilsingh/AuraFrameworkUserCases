@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="appHandleMsg" type="String"/>
+    <aura:handler event="c:ApplicationEventExample2" action="{!c.handleEvent}"/>
+    <c:ChildApplicationEventExample2/>
+    <c:Child_Two_ApplicationEventExample2/>
+    <p>-------This is Parent A Component---------------</p>
+    <h1>{!v.appHandleMsg}</h1>
+     <p>----------------------</p>
+</aura:component>

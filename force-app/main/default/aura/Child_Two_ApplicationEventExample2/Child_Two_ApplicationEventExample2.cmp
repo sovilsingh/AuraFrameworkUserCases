@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute name="handlemsg" type="String"/>
+    <aura:handler event="c:ApplicationEventExample2" action="{!c.handleEvent}"/>
+     <h1>------------------</h1>
+    <h1> I am the Child Two WHich is Handleing Child One</h1>
+    <h1> I am the Child Two :  {!v.handlemsg} </h1>
+     <h1>------------------</h1>
+</aura:component>

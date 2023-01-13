@@ -1,0 +1,8 @@
+<aura:component >
+    <!--Register of application event is optional in application event-->
+    <!--<aura:registerEvent name="ApplicationEvent" type="c:ApplicationEventExample2"/> -->
+    <lightning:button label = "Fire The App Event" onclick="{!c.callhandle}" variant="brand"/>
+    <h1>------------------</h1>
+    <p>This is From Child Component One Where Event is Register</p>
+    <h1>------------------</h1>
+</aura:component>

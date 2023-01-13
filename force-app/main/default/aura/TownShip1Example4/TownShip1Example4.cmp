@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:registerEvent name="LowPriorityComplaintFromTownship_1" type="c:ComponentEventWithComplaintMsgExample4"/>
+    <aura:registerEvent name="MediumPriorityComplaintFromTownship_1" type="c:ComponentEventWithComplaintMsgExample4"/>
+    <aura:registerEvent name="HighPriorityComplaintFromTownship_1" type="c:ComponentEventWithComplaintMsgExample4"/>
+    <P>This is From State 1 District 1 Town 1</P>
+    <lightning:button label="Submit My LP Complaints" aura:id="LPB" name="LPComplaint" onclick="{!c.forwardLPComplaints}"/>
+    <lightning:button label="Submit My MP Complaints" aura:id="MPB" name="MPComplaint" onclick="{!c.forwardMPComplaints}"/>
+    <lightning:button label="Submit My HP Complaints" aura:id="HPB" name="HPComplaint" onclick="{!c.forwardHPComplaints}"/>
+</aura:component>
