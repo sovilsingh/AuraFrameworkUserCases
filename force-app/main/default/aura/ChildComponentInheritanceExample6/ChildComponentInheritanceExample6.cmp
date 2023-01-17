@@ -1,0 +1,4 @@
+<aura:component extends="c:ParentComponentInheritanceExample6">
+    <!--Attribute declared in Parent Class used here using AURA:Set here and used in child component-->
+    <aura:set attribute="description" value="Hello World!" />
+</aura:component>

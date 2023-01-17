@@ -1,0 +1,5 @@
+<aura:component extensible="true">
+    <!--Attribute declared here and used in child component-->
+    <aura:attribute name="description" type="String" default="Hello!!" />
+    <p>Description: {!v.description}</p>
+</aura:component>
