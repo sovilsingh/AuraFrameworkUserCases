@@ -1,0 +1,6 @@
+<aura:component >
+    This file include other components <br></br>
+    <c:ChildOneCompositionExample8/>
+    <c:ChildTwoCompositionExample8/>
+    <c:ChildTwoCompositionExample8 whom="This is new"/>
+</aura:component>

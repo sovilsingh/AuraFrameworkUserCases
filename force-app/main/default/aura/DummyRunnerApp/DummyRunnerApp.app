@@ -7,4 +7,5 @@
     <!--<c:ParentComponentInheritanceExample6/>-->
     <!--<c:ChildComponentInheritanceExample6/>-->
     <!--<c:ChildComponentInheritanceExample7/>-->
+    <!--<c:ParentNestedCompositionExample8/>-->
 </aura:application>

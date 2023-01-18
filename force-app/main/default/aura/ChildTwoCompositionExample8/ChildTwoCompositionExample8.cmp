@@ -1,0 +1,6 @@
+<aura:component >
+   <aura:attribute name="whom" 
+                   type="string" 
+                   default="You are unique"/>  
+    Hello, {!v.whom}
+</aura:component>
