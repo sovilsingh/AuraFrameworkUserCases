@@ -1,0 +1,9 @@
+<aura:component >
+  <aura:attribute type="String" name="parentVar" default="Parent var"/>
+    <c:ChildUnBoundedExpressionExample10 childVar="{!v.parentVar}"/>
+    <br/>  <br/>
+    Parent value : {!v.parentVar}
+    <br/>  <br/>
+    <lightning:button label="Update Parent Var" onclick="{!c.updateParentVar}"/>
+    <hr/>
+</aura:component>

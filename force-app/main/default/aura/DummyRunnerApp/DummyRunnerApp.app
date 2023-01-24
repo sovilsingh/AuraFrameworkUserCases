@@ -8,4 +8,7 @@
     <!--<c:ChildComponentInheritanceExample6/>-->
     <!--<c:ChildComponentInheritanceExample7/>-->
     <!--<c:ParentNestedCompositionExample8/>-->
+    <!--<c:ParentLightningComponentLifeCycleExample9/>-->
+    <!--<c:ParentUnBoundedExpressionExample10/>-->
+    <c:ParentBoundedExpressionExample10/>
 </aura:application>
