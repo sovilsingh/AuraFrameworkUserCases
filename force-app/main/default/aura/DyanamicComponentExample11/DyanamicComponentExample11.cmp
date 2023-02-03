@@ -1,0 +1,7 @@
+<aura:component >    
+    <div class="slds-m-around_xx-large">
+        <label class="mdp-form-user-element__label" id="enteredName"></label><br/><br/>
+        <lightning:button label="Add Your Name" variant="brand" onclick="{!c.handlePopup}"/>
+    </div>
+    {!v.body }
+</aura:component>

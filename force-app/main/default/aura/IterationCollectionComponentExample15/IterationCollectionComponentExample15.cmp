@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="games" type="String[]" default="['Cricket','Football','Tennis']"/>
+    <h1>List of Games</h1>
+    <aura:iteration items="{!v.games}" var="game">
+        <ul>
+         <li>{!game}</li>
+        </ul>
+    </aura:iteration>
+</aura:component>

@@ -1,0 +1,9 @@
+<aura:component >
+	<h1>Calling methods of child Component throught Parent Component</h1>
+    
+    <hr/>
+    <c:AuraMethodChildComponentExample16 aura:id="messages"/>
+     <ui:button label="Show Confirmation" press="{!c.handleShow}"/>
+     <ui:button label="Show Error" press="{!c.handleError}"/>
+     <ui:button label="Remove Message" press="{!c.handleRemove}"/>
+</aura:component>

@@ -111,6 +111,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AccountContactsExample18</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AccountController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -172,6 +176,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>IOpportunityDAO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LightningDataTableExample12</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -738,6 +746,10 @@
     <layoutAssignments>
         <layout>WorkTypeGroupMember-Work Type Group Member Layout</layout>
     </layoutAssignments>
+    <tabVisibilities>
+        <tab>LWC</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <userLicense>Analytics Cloud Integration User</userLicense>
     <userPermissions>
         <enabled>true</enabled>

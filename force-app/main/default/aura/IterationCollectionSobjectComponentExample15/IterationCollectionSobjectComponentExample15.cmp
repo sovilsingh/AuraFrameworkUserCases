@@ -1,0 +1,10 @@
+<aura:component controller="AccountUtilInheritanceExample7">
+    <aura:attribute name="accList" type="Account"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInIt}"/>
+   <h1>Name</h1>
+    <aura:iteration items="{!v.accList}" var="acc">
+         <ul>
+         <li>{!acc.Name}</li>
+        </ul>
+    </aura:iteration>
+</aura:component>

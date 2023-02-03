@@ -1,0 +1,11 @@
+.wrapbox {
+  width: 20em;
+  margin: 0.5em;
+  white-space: normal;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.auto {
+  line-break: auto;
+}
