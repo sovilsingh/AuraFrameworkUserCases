@@ -167,6 +167,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DisplayAccountWrapperControllerExample20</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>IAccountControllerDOA</apexClass>
         <enabled>true</enabled>
     </classAccesses>
