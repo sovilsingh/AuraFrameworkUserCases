@@ -33,7 +33,7 @@ public class AccountContactsExample18 {
         return resultMap;
     }
     @AuraEnabled
-    public static Map<String,String> newContact(Contact newContact){
+    public static Map<String,String> newContactRecord(Contact newContact){
         Map<String,String> resultMap = new Map<String,String>();
         try{
              Insert newContact;

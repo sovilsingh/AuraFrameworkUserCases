@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome" access="global">
+   <lightning:navigation aura:id="navService"/>
+   <lightning:button name="Test" label="Navigate to Account list view" onclick="{!c.navigate}"/>
+</aura:component>

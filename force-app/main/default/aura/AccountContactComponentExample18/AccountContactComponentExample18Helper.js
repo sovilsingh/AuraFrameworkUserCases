@@ -127,5 +127,44 @@
             }
         });
         $A.enqueueAction(deleteAction);
+    },
+    
+    insertContact : function(component, event, helper){
+     console.log('Ente Helper Method')
+     var contact = component.get('v.contact');
+     contact.AccountId = component.get('v.recordId');
+     var toastEvent = $A.get('e.force:showToast');
+     var createAction = component.get('c.newContactRecord');
+        createAction.setParams({
+            newContact : contact
+        }); 
+        createAction.setCallback(this, function(response){
+             var state = response.getState();
+            if(state==='SUCCESS'){
+                var dataMap = response.getReturnValue();
+                if(dataMap.status== 'success'){
+                    toastEvent.setParams({
+                        'title': 'Success!',
+                        'type':'success',
+                        'mode':'dismissable',
+                        'message': dataMap.message
+                    });
+                    toastEvent.fire();
+                    window.loaction.reload();
+                }else if(dataMap.status== 'failed'){
+                    toastEvent.setParams({
+                        'title': 'Error!',
+                        'type':'error',
+                        'mode':'dismissable',
+                        'message': dataMap.message
+                    });
+                   toastEvent.fire(); 
+                }
+                else{
+                    alert('Error in connecting Server');
+                }
+            }
+        });  
+        $A.enqueueAction(createAction);
     }
 })
