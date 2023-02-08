@@ -20,4 +20,5 @@
     <!-- <c:AuraActionParentComponentExample17/>-->
     <!--<c:AccountContactComponentExample18 recordId="0012w000017dwMFAAY"/>-->
     <!--<c:DisplayAccountWrapperComponentExample20/>-->
+    <c:customLookupComponentExample21/>
 </aura:application>

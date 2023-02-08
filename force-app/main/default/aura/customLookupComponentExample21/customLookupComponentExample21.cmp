@@ -1,0 +1,28 @@
+<aura:component controller="customLookupComponentServiceExample21">
+    <aura:attribute name="objName" type="String" default="Account"/>
+    <aura:attribute name="fieldName" type="String" default="Name"/>
+    <aura:attribute name="iconName" type="String" default="standard:account"/>
+    <aura:attribute name="recordList" type="Object"/>
+     <aura:attribute name="selectRecord" type="Object"/>
+    <aura:handler name="LookUpEvent" event="c:customLookupEventExample21" action="{!c.doHandleSearchEvent}" />
+    <aura:handler name="selectEvent" event="c:customLookupEventSelectExample21" action="{!c.doHandleSelectEvent}"/>
+	<div class="slds-p-left_small slds-p-top_small slds-p-bottom_small">
+        <aura:if isTrue="{!v.selectRecord == null}">
+           <c:CustomLookupSearchComponentExample21/>
+            <aura:set attribute="else">
+                    <lightning:pill label="{!v.selectRecord.Name}" onremove="{!c.handleRemove}">
+                          <aura:set attribute="media">
+                            <lightning:icon iconName="standard:account"  alternativeText="Account"/>
+                          </aura:set>
+                  </lightning:pill>
+
+              <!--   <lightning:pill label="{!v.selectRecord.Name}" 
+                                 onremove="{!c.handleRemove}" 
+                                 /> -->
+            </aura:set>
+        </aura:if> 
+    </div>
+    <div>
+        <c:customLookupListComponentExample21 recordList="{!v.recordList}" iconName="{!v.iconName}"/>
+    </div>
+</aura:component>
