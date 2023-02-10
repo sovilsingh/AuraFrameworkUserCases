@@ -21,4 +21,6 @@
     <!--<c:AccountContactComponentExample18 recordId="0012w000017dwMFAAY"/>-->
     <!--<c:DisplayAccountWrapperComponentExample20/>-->
     <!--<c:customLookupComponentExample21/>-->
+    <!--<c:MapComponentExample24/>-->
+        <c:MapIterateComponentExample24/>
 </aura:application>

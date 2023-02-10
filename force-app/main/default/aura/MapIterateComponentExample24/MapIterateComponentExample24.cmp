@@ -1,0 +1,8 @@
+<aura:component controller="MapIterateExample24" >
+    <aura:attribute type="list" name="list1"/>
+    <aura:attribute type="map" name="map1"/>
+    <ui:button label="Iterate Map in lightning component" press="{!c.getMapValues}" />
+   <aura:iteration items="{!v.list1}"  var="key"> // Iterating over keys in list
+    <c:MapIterateChildComponentExample24 map="{!v.map1}" key="{!key}" />  // Calling child component
+    </aura:iteration>  
+</aura:component>

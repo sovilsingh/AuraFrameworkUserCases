@@ -270,6 +270,12 @@
                 <identifier>flexipage_tabset2</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>ForceRecordCreateExample23</componentName>
+                <identifier>c_ForceRecordCreateExample23</identifier>
+            </componentInstance>
+        </itemInstances>
         <mode>Replace</mode>
         <name>sidebar</name>
         <type>Region</type>
