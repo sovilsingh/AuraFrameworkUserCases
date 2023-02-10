@@ -1,0 +1,27 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome" access="global" >
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="recordFieldsToQuery" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+    <force:recordData aura:id="savingRecord"
+                      recordId="{!v.recordId}"
+                      layoutType="FULL"
+                      mode="EDIT"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.recordFieldsToQuery}"
+                      targetError="{!v.recordError}"
+                      recordUpdated="{!c.recordUpdated}"
+                      />
+
+    <!--We are using lightning card to display fields of account object-->
+   
+    <lightning:card iconName="action:edit" title="Edit Account">
+        <div class="slds-p-horizontal--small">
+            <lightning:formattedText label="Account name" value="{!v.recordFieldsToQuery.Name}"/>
+            <br/>
+            <lightning:input label="Account billing city" value="{!v.recordFieldsToQuery.BillingCity}" />
+            <br/>
+            <lightning:button label="Save Changes" variant="brand" onclick="{!c.handleSaveChange}" />
+        </div>
+    </lightning:card>
+
+</aura:component>
